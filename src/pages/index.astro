@@ -1,0 +1,104 @@
+---
+import '../styles/global.css';
+const services = [
+  { title: 'Infrastructure & Virtualization', description: 'Design, modernize, and operate dependable compute and virtualization platforms built around business needs.', icon: 'server', number:'01' },
+  { title: 'Cloud & Platform Engineering', description: 'Build practical, scalable cloud and container platforms with maintainability at their core.', icon: 'cloud', number:'02' },
+  { title: 'Infrastructure Automation', description: 'Replace repetitive operations with repeatable automation, configuration management, and infrastructure as code.', icon: 'automation', number:'03' },
+  { title: 'Enterprise Systems Integration', description: 'Connect infrastructure, enterprise applications, and operational tooling into coherent, observable systems.', icon: 'layers', number:'04' },
+];
+const steps = [
+  {n:'01',title:'Understand',description:'Assess the environment, constraints, and desired outcomes.'},
+  {n:'02',title:'Architect',description:'Design an approach that balances reliability, simplicity, and scale.'},
+  {n:'03',title:'Deliver',description:'Implement, automate, test, and document the solution.'},
+  {n:'04',title:'Improve',description:'Measure outcomes and refine operations over time.'},
+];
+const capabilities = ['VMware & Virtualization','Kubernetes & Containers','Ansible Automation','Infrastructure as Code','Hybrid Cloud','Observability & Monitoring','Enterprise Middleware','Platform Reliability'];
+const email='hello@YOUR-DOMAIN.COM'; // Replace with your actual business address.
+---
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#143b59" />
+    <meta name="description" content="Neter Systems helps organizations design, integrate, and automate dependable infrastructure and cloud platforms." />
+    <meta property="og:title" content="Neter Systems | Engineering Infrastructure for What's Next" />
+    <meta property="og:description" content="Infrastructure. Cloud. Automation. Engineered with purpose." />
+    <meta property="og:type" content="website" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <title>Neter Systems | Engineering Infrastructure for What's Next</title>
+  </head>
+  <body>
+    <header class="sticky top-0 z-50 border-b border-slate-100 bg-white/95 backdrop-blur-lg">
+      <div class="container-n flex h-[78px] items-center justify-between">
+        <a href="#home" aria-label="Neter Systems home" class="flex items-center gap-3 no-underline">
+          <span class="flex h-10 w-10 items-center justify-center rounded-xl bg-navy text-white" aria-hidden="true">
+            <svg width="26" height="26" viewBox="0 0 26 26" fill="none"><path d="M4 20V6l18 14V6" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/><circle cx="22" cy="6" r="2" fill="white"/></svg>
+          </span>
+          <span class="flex flex-col leading-none"><strong class="text-[18px] tracking-[.08em] text-navy">NETER</strong><span class="mt-1 text-[9px] font-semibold tracking-[.31em] text-steel">SYSTEMS</span></span>
+        </a>
+        <nav class="hidden items-center gap-9 md:flex" aria-label="Main navigation">
+          <a class="text-sm font-medium text-slate-600 hover:text-navy" href="#services">Services</a>
+          <a class="text-sm font-medium text-slate-600 hover:text-navy" href="#approach">Approach</a>
+          <a class="text-sm font-medium text-slate-600 hover:text-navy" href="#about">About</a>
+          <a class="rounded-lg bg-navy px-5 py-3 text-sm font-semibold text-white hover:bg-steel" href="#contact">Let's Talk <span aria-hidden="true">↗</span></a>
+        </nav>
+        <button id="nav-toggle" class="rounded-lg border border-slate-200 p-2 text-navy md:hidden" aria-label="Open navigation" aria-controls="mobile-nav" aria-expanded="false">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+        </button>
+      </div>
+      <nav id="mobile-nav" class="mobile-nav border-t border-slate-100 bg-white p-5 shadow-lg md:hidden" aria-label="Mobile navigation" hidden>
+        <div class="flex flex-col gap-5 text-sm font-medium text-navy"><a href="#services">Services</a><a href="#approach">Approach</a><a href="#about">About</a><a href="#contact">Contact ↗</a></div>
+      </nav>
+    </header>
+
+    <main>
+      <section id="home" class="relative overflow-hidden border-b border-slate-100 bg-white">
+        <div class="grid-pattern pointer-events-none absolute inset-y-0 right-0 w-3/4" aria-hidden="true"></div>
+        <div class="pointer-events-none absolute -right-44 top-12 h-[600px] w-[600px] rounded-full bg-[#e9f4f9] opacity-60 blur-3xl" aria-hidden="true"></div>
+        <div class="container-n relative grid min-h-[640px] items-center gap-12 py-24 lg:grid-cols-[1.25fr_.75fr] lg:py-28">
+          <div class="max-w-[760px]">
+            <span class="mb-8 inline-flex items-center gap-2 rounded-full border border-[#d2e4ed] bg-[#f1f7fa] px-4 py-2 text-[11px] font-bold tracking-[.13em] text-[#316581]"><span class="h-2 w-2 rounded-full bg-[#397a9c]"></span> INFRASTRUCTURE · CLOUD · AUTOMATION</span>
+            <h1 class="max-w-[780px] text-[clamp(2.8rem,5.5vw,5.4rem)] font-bold leading-[1.08] tracking-[-.057em] text-ink">Engineering infrastructure <span class="text-steel">for what's next.</span></h1>
+            <p class="mt-7 max-w-[590px] text-lg leading-[1.8] text-muted">We design, integrate, and automate reliable infrastructure platforms that help organizations operate efficiently, scale confidently, and evolve with purpose.</p>
+            <div class="mt-9 flex flex-wrap gap-3"><a class="btn-primary" href="#services">Explore Our Services <span aria-hidden="true">↗</span></a><a class="btn-secondary" href="#contact">Start a Conversation <span aria-hidden="true">→</span></a></div>
+            <div class="mt-14 flex items-center gap-4 border-t border-slate-200 pt-6"><span class="h-[1px] w-8 bg-steel"></span><span class="text-xs font-semibold uppercase tracking-[.16em] text-slate-500">Independent thinking. Engineered solutions.</span></div>
+          </div>
+          <div class="relative hidden h-[405px] items-center justify-center lg:flex" aria-hidden="true">
+            <div class="absolute h-[350px] w-[350px] rounded-full border border-[#bfd6e4]"></div><div class="absolute h-[270px] w-[270px] rounded-full border border-[#aecbda]"></div><div class="absolute h-[190px] w-[190px] rounded-full border border-[#99bacb]"></div>
+            <div class="absolute h-[370px] w-[1px] rotate-45 bg-gradient-to-b from-transparent via-[#9fc0d1] to-transparent"></div><div class="absolute h-[370px] w-[1px] -rotate-45 bg-gradient-to-b from-transparent via-[#9fc0d1] to-transparent"></div>
+            <div class="relative flex h-[132px] w-[132px] items-center justify-center rounded-[32px] border border-[#9ebbc9] bg-white shadow-[0_25px_90px_#143b5920]"><svg width="70" height="70" viewBox="0 0 26 26" fill="none"><path d="M4 20V6l18 14V6" stroke="#143b59" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><circle cx="22" cy="6" r="2" fill="#397a9c"/></svg></div>
+            <span class="absolute left-[25px] top-[50px] h-3 w-3 rounded-full bg-steel shadow-[0_0_0_9px_#397a9c15]"></span><span class="absolute bottom-[43px] right-[49px] h-3 w-3 rounded-full bg-navy shadow-[0_0_0_9px_#143b5915]"></span>
+          </div>
+        </div>
+      </section>
+
+      <section id="services" class="bg-fog py-24 sm:py-28">
+        <div class="container-n">
+          <div class="mb-12 max-w-[680px]"><p class="section-label mb-4">What we do</p><h2 class="section-title">Technology that works <span class="text-steel">with your business.</span></h2><p class="mt-5 text-lg leading-relaxed text-muted">Focused engineering services for the platforms and systems that organizations depend on.</p></div>
+          <div class="grid gap-5 md:grid-cols-2">
+            {services.map(s => <article class="service-card flex min-h-[265px] flex-col"><div class="mb-8 flex items-start justify-between"><span class="icon-box" aria-hidden="true">{s.icon==='server' ? <svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="7" rx="2"/><rect x="3" y="14" width="18" height="7" rx="2"/><path d="M7 6.5h.01M7 17.5h.01M11 6.5h7M11 17.5h7"/></svg> : s.icon==='cloud' ? <svg viewBox="0 0 24 24"><path d="M7 18a5 5 0 0 1-1-9.9A7 7 0 0 1 19.5 10 4 4 0 0 1 19 18H7Z"/></svg> : s.icon==='automation' ? <svg viewBox="0 0 24 24"><rect x="2" y="3" width="8" height="6" rx="1"/><rect x="14" y="15" width="8" height="6" rx="1"/><path d="M6 9v6h8M10 6h7a3 3 0 0 1 3 3v6"/></svg> : <svg viewBox="0 0 24 24"><path d="m12 2 9 5-9 5-9-5 9-5ZM3 12l9 5 9-5M3 17l9 5 9-5"/></svg>}</span><span class="text-sm font-semibold text-slate-300">{s.number}</span></div><h3 class="text-xl font-bold tracking-[-.025em] text-ink">{s.title}</h3><p class="mt-3 text-[15px] leading-[1.8] text-muted">{s.description}</p></article>)}
+          </div>
+        </div>
+      </section>
+
+      <section id="approach" class="py-24 sm:py-28"><div class="container-n"><div class="max-w-[660px]"><p class="section-label mb-4">Our approach</p><h2 class="section-title">Clarity from complexity.</h2><p class="mt-5 text-lg leading-relaxed text-muted">Our delivery philosophy starts with understanding the problem—not choosing the tool.</p></div><div class="mt-14 grid gap-8 md:grid-cols-4">{steps.map(step => <div class="border-t-2 border-[#a9c7d7] pt-6"><span class="text-sm font-bold text-steel">{step.n} / 04</span><h3 class="mt-4 text-xl font-bold text-ink">{step.title}</h3><p class="mt-3 text-[15px] leading-relaxed text-muted">{step.description}</p></div>)}</div></div></section>
+
+      <section class="bg-[#eaf2f7] py-20"><div class="container-n grid gap-10 lg:grid-cols-[.9fr_1.1fr] lg:items-center"><div><p class="section-label mb-4">Technical focus</p><h2 class="section-title">Broad systems thinking. <span class="text-steel">Practical execution.</span></h2><p class="mt-5 leading-[1.8] text-muted">We approach infrastructure as an interconnected system, combining platform knowledge with automation and operational discipline.</p></div><div class="flex flex-wrap gap-3">{capabilities.map(cap => <span class="rounded-lg border border-[#cbdae4] bg-white px-4 py-3 text-sm font-semibold text-[#34536a]">{cap}</span>)}</div></div></section>
+
+      <section id="about" class="py-24 sm:py-28"><div class="container-n grid gap-12 lg:grid-cols-2 lg:items-center"><div class="relative min-h-[330px] overflow-hidden rounded-2xl bg-[#153c59] p-10 text-white"><div class="absolute -bottom-36 -right-28 h-[420px] w-[420px] rounded-full border border-white/20"></div><div class="absolute -bottom-20 -right-16 h-[310px] w-[310px] rounded-full border border-white/20"></div><div class="absolute -bottom-5 right-10 h-[195px] w-[195px] rounded-full border border-white/20"></div><p class="relative text-xs font-semibold tracking-[.22em] text-[#a8ccdf]">OUR PHILOSOPHY</p><p class="relative mt-14 max-w-[400px] text-[clamp(1.7rem,3.1vw,2.5rem)] font-semibold leading-[1.25] tracking-[-.04em]">Build with intention. Operate with confidence.</p></div><div><p class="section-label mb-4">About Neter Systems</p><h2 class="section-title">Engineering before everything.</h2><p class="mt-6 text-[16px] leading-[1.9] text-muted">Neter Systems is an emerging technology services company focused on engineering dependable IT infrastructure and automation solutions. We believe sustainable systems are built through clear architecture, thoughtful implementation, and a strong understanding of real operational needs.</p><p class="mt-4 text-[16px] leading-[1.9] text-muted">Our goal is to help organizations move beyond day-to-day complexity toward platforms that are easier to manage, adapt, and grow.</p></div></div></section>
+
+      <section id="contact" class="bg-navy py-24 text-white sm:py-28"><div class="container-n flex flex-col items-start justify-between gap-10 md:flex-row md:items-end"><div class="max-w-[670px]"><p class="mb-4 text-xs font-bold uppercase tracking-[.2em] text-[#a7cbdc]">Start a conversation</p><h2 class="text-[clamp(2.2rem,5vw,4rem)] font-bold leading-[1.15] tracking-[-.05em]">Have an infrastructure challenge? <span class="text-[#a6cce0]">Let's talk.</span></h2><p class="mt-6 max-w-[540px] leading-relaxed text-[#d0e0ea]">Tell us what you're working on. We'd be glad to explore how thoughtful engineering can help.</p></div><a href={`mailto:${email}?subject=Project%20inquiry%20-%20Neter%20Systems`} class="inline-flex shrink-0 items-center gap-3 rounded-lg bg-white px-6 py-4 font-semibold text-navy transition hover:bg-[#eaf2f7]">Email Neter Systems <span aria-hidden="true">↗</span></a></div></section>
+    </main>
+    <footer class="bg-[#0e2c43] py-10 text-white"><div class="container-n flex flex-col items-start justify-between gap-6 sm:flex-row sm:items-center"><div><p class="text-lg font-bold tracking-[.1em]">NETER <span class="font-medium text-[#a8cbdc]">SYSTEMS</span></p><p class="mt-2 text-xs text-[#9db8c9]">Infrastructure · Cloud · Automation</p></div><div class="flex flex-wrap gap-6 text-sm text-[#b5cada]"><a href="#home" class="hover:text-white">Back to top ↑</a><a href="#services" class="hover:text-white">Services</a><a href="#about" class="hover:text-white">About</a><a href="#contact" class="hover:text-white">Contact</a></div><p class="text-xs text-[#9db8c9]">© {new Date().getFullYear()} Neter Systems.</p></div></footer>
+    <script>
+      const toggle=document.getElementById('nav-toggle');
+      const mobile=document.getElementById('mobile-nav');
+      toggle?.addEventListener('click',()=>{if(!mobile)return;const isOpen=toggle.getAttribute('aria-expanded')==='true';mobile.hidden=isOpen;toggle.setAttribute('aria-expanded',String(!isOpen));toggle.setAttribute('aria-label',isOpen?'Open navigation':'Close navigation');});
+      mobile?.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{mobile.hidden=true;toggle?.setAttribute('aria-expanded','false');toggle?.setAttribute('aria-label','Open navigation');}));
+    </script>
+  </body>
+</html>
